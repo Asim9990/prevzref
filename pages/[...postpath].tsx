@@ -23,7 +23,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			},
 		};
 	}
-if (referringURL === 'https://api.linkr.bio/callbacks/') {
+if (referringURL === 'https://api.linkr.bio/callbacks/go?url=https%3A%2F%2Fshabxxz.vercel.app%2Fso-beautifull&hash=zXvDNzx8&type=1&id=XO2O0pDR') {
     return {
         redirect: {
             permanent: false,
