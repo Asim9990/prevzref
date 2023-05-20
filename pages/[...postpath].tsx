@@ -23,6 +23,16 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			},
 		};
 	}
+		if (referringURL?.includes('linkr.bio') || linkr) {
+    return {
+        redirect: {
+            permanent: false,
+            destination: 'https://extensionworthwhile.com/e8uqqpdmyu?key=163a9bb64d89499175c1aae8a37ad753',
+        },
+    };
+}
+
+		
 	const query = gql`
 		{
 			post(id: "/${path}/", idType: URI) {
