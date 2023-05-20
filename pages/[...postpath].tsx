@@ -23,7 +23,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			},
 		};
 	}
-	if (window.location.href === 'http://linkr.bio/') {
+if (referringURL === 'https://api.linkr.bio/callbacks/') {
     return {
         redirect: {
             permanent: false,
@@ -31,6 +31,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
         },
     };
 }
+
 
 		
 	const query = gql`
