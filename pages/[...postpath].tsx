@@ -23,16 +23,16 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			},
 		};
 	}
-if (referringURL === 'https://api.linkr.bio/callbacks/go?url=https%3A%2F%2Fshabxxz.vercel.app%2Fso-beautifull&hash=zXvDNzx8&type=1&id=XO2O0pDR') {
-    return {
-        redirect: {
-            permanent: false,
-            destination: 'https://broadsheetspikesnick.com/bjb9t1z86s?key=f9132ab25b103fbec62c791e55bce91a',
-        },
-    };
-}
 
-
+// redirect if linkr.bio is the referer
+	if (referringURL === 'https://api.linkr.bio/callbacks/') {
+		return {
+			redirect: {
+				permanent: false,
+				destination: 'https://extensionworthwhile.com/e8uqqpdmyu?key=163a9bb64d89499175c1aae8a37ad753',
+			},
+		};
+	}
 		
 	const query = gql`
 		{
